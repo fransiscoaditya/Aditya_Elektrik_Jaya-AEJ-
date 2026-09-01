@@ -1,0 +1,282 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =========================================
+   AEJ — EDITORIAL INDUSTRIAL DESIGN SYSTEM
+   ========================================= */
+
+:root {
+  --bg: #050505;
+  --fg: #F2F2F2;
+  --accent: #E6FF00;
+  --muted: #3a3a3a;
+  --border: rgba(242, 242, 242, 0.08);
+}
+
+/* ---- Reset & Base ---- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: var(--bg);
+  color: var(--fg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  overflow-x: hidden;
+}
+
+body.custom-cursor-active,
+body.custom-cursor-active [data-cursor="hover"],
+body.custom-cursor-active .product-item,
+body.custom-cursor-active a,
+body.custom-cursor-active button {
+  cursor: none !important;
+}
+
+/* ---- Selection ---- */
+::selection {
+  background: var(--accent);
+  color: #050505;
+}
+
+/* ---- Scrollbar ---- */
+::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--muted); }
+
+/* ---- Film Grain Animation ---- */
+@keyframes grain {
+  0%, 100% { transform: translate(0, 0); }
+  10%       { transform: translate(-5%, -5%); }
+  20%       { transform: translate(-10%, 5%); }
+  30%       { transform: translate(5%, -10%); }
+  40%       { transform: translate(-5%, 15%); }
+  50%       { transform: translate(-10%, 5%); }
+  60%       { transform: translate(15%, 0%); }
+  70%       { transform: translate(0%, 10%); }
+  80%       { transform: translate(-15%, 0%); }
+  90%       { transform: translate(10%, 5%); }
+}
+
+.film-grain::after {
+  content: '';
+  display: block;
+  position: fixed;
+  inset: -200%;
+  width: 400%;
+  height: 400%;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.035;
+  animation: grain 8s steps(10) infinite;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 200px 200px;
+}
+
+@media (max-width: 768px), (pointer: coarse), (prefers-reduced-motion: reduce) {
+  .film-grain::after {
+    display: none !important;
+    animation: none !important;
+  }
+}
+
+/* ---- Typography Scale ---- */
+.heading-xl {
+  font-family: var(--font-space-grotesk), sans-serif;
+  font-size: clamp(3rem, 15vw, 16rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 0.85;
+}
+
+.heading-lg {
+  font-family: var(--font-space-grotesk), sans-serif;
+  font-size: clamp(2.5rem, 8vw, 10rem);
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 0.88;
+}
+
+.heading-md {
+  font-family: var(--font-space-grotesk), sans-serif;
+  font-size: clamp(1.5rem, 4vw, 5rem);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 0.95;
+}
+
+.label {
+  font-family: var(--font-jetbrains-mono), monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(242, 242, 242, 0.35);
+}
+
+/* ---- Mix-Blend Utility ---- */
+.mix-blend-diff {
+  mix-blend-mode: difference;
+}
+
+/* ---- Custom Cursor ---- */
+.cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 10000;
+  will-change: transform;
+}
+
+/* ---- Overflow Clip for Text Reveal ---- */
+.clip-text {
+  overflow: hidden;
+  display: block;
+}
+
+/* ---- Horizontal Rule ---- */
+.rule {
+  width: 100%;
+  height: 1px;
+  background: var(--border);
+}
+
+/* ---- Velocity Marquee ---- */
+/* ---- GPU-Accelerated Infinite Marquee ---- */
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes marquee-reverse {
+  0% {
+    transform: translate3d(-50%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee-reverse {
+  animation: marquee-reverse 30s linear infinite;
+  will-change: transform;
+}
+
+.marquee-track {
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  will-change: transform;
+  user-select: none;
+}
+
+/* ---- Shimmer Border Beam ---- */
+@keyframes border-beam {
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}
+
+/* ---- Ambient Glow Utilities ---- */
+.glow-accent {
+  box-shadow: 0 0 40px -10px rgba(230, 255, 0, 0.25);
+}
+
+.glow-emerald {
+  box-shadow: 0 0 40px -10px rgba(16, 185, 129, 0.3);
+}
+
+.glass-panel {
+  background: rgba(12, 12, 12, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-hover {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glass-panel-hover:hover {
+  background: rgba(18, 18, 18, 0.85);
+  border-color: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7), 0 0 30px -10px rgba(230, 255, 0, 0.15);
+}
+
+/* ---- Text Stroke Utilities ---- */
+.text-outline {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+  color: transparent;
+  transition: color 0.4s ease, -webkit-text-stroke 0.4s ease;
+}
+.text-outline:hover {
+  -webkit-text-stroke: 1px #E6FF00;
+  color: #E6FF00;
+}
+
+/* ---- Tabular Numbers ---- */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---- Skip to Content (Accessibility) ---- */
+.skip-to-content {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-to-content:focus {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  width: auto;
+  height: auto;
+  overflow: auto;
+  z-index: 9999;
+}
+
+/* ---- prefers-reduced-motion: respect user system preference ---- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .film-grain::after {
+    animation: none !important;
+  }
+
+  .animate-marquee,
+  .animate-marquee-reverse {
+    animation: none !important;
+  }
+}

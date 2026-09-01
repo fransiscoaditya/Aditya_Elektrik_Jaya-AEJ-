@@ -1,0 +1,402 @@
+[
+  {
+    "id": "KBL-01",
+    "name": "KBL POWER KOMP/MAGICCOM HITAM",
+    "brand": "SNI Certified",
+    "category": "kabel",
+    "categoryName": "Kabel & Penghantar",
+    "spec": "Per Meter",
+    "price": 15000,
+    "available": true
+  },
+  {
+    "id": "KBL-02",
+    "name": "ROLL KABEL LOYAL WELTO 10 MTR LY-110",
+    "brand": "SNI Certified",
+    "category": "kabel",
+    "categoryName": "Kabel & Penghantar",
+    "spec": "Roll / Meter",
+    "price": 70000,
+    "available": true
+  },
+  {
+    "id": "KBL-03",
+    "name": "ROLL KABEL LOYAL WELTO 10 MTR LY-110+SK",
+    "brand": "SNI Certified",
+    "category": "kabel",
+    "categoryName": "Kabel & Penghantar",
+    "spec": "Roll / Meter",
+    "price": 75000,
+    "available": true
+  },
+  {
+    "id": "KBL-04",
+    "name": "ROLL KABEL LOYAL WELTO 15 MTR LY-111+SK",
+    "brand": "SNI Certified",
+    "category": "kabel",
+    "categoryName": "Kabel & Penghantar",
+    "spec": "Roll / Meter",
+    "price": 85000,
+    "available": true
+  },
+  {
+    "id": "KBL-05",
+    "name": "ROLL KABEL LOYAL WELTO TURBO 20 MTR LY-118+SK",
+    "brand": "SNI Certified",
+    "category": "kabel",
+    "categoryName": "Kabel & Penghantar",
+    "spec": "Roll / Meter",
+    "price": 115000,
+    "available": true
+  },
+  {
+    "id": "KBL-06",
+    "name": "S/K + KBL DATAR 1,5 MTR 3 LUBANG YUNIOR LY-211SK",
+    "brand": "SNI Certified",
+    "category": "kabel",
+    "categoryName": "Kabel & Penghantar",
+    "spec": "Roll / Meter",
+    "price": 22000,
+    "available": true
+  },
+  {
+    "id": "KBL-07",
+    "name": "TANG KUPAS KABEL DV WX-700DN",
+    "brand": "SNI Certified",
+    "category": "kabel",
+    "categoryName": "Kabel & Penghantar",
+    "spec": "Per Meter",
+    "price": 85000,
+    "available": true
+  },
+  {
+    "id": "KBL-08",
+    "name": "KABELDUCT DV 10 X 10",
+    "brand": "SNI Certified",
+    "category": "kabel",
+    "categoryName": "Kabel & Penghantar",
+    "spec": "Per Meter",
+    "price": 5000,
+    "available": true
+  },
+  {
+    "id": "KBL-09",
+    "name": "KABELDUCT DV 10 X 15",
+    "brand": "SNI Certified",
+    "category": "kabel",
+    "categoryName": "Kabel & Penghantar",
+    "spec": "Per Meter",
+    "price": 7000,
+    "available": true
+  },
+  {
+    "id": "KBL-10",
+    "name": "KABELDUCT DV 16 X 16",
+    "brand": "SNI Certified",
+    "category": "kabel",
+    "categoryName": "Kabel & Penghantar",
+    "spec": "Per Meter",
+    "price": 9000,
+    "available": true
+  },
+  {
+    "id": "LMP-01",
+    "name": "EMERGENCY LAMP PETROMAK AOKI 7833",
+    "brand": "Standard LED",
+    "category": "lampu",
+    "categoryName": "Lampu & Pencahayaan",
+    "spec": "Pcs / Buah",
+    "price": 115000,
+    "available": true
+  },
+  {
+    "id": "LMP-02",
+    "name": "EMERGENCY LAMP PETROMAK LUBY L-770C",
+    "brand": "Luby",
+    "category": "lampu",
+    "categoryName": "Lampu & Pencahayaan",
+    "spec": "Pcs / Buah",
+    "price": 125000,
+    "available": true
+  },
+  {
+    "id": "LMP-03",
+    "name": "EMERGENCY LAMP PETROMAK SURYA SHL-L3903",
+    "brand": "Standard LED",
+    "category": "lampu",
+    "categoryName": "Lampu & Pencahayaan",
+    "spec": "Pcs / Buah",
+    "price": 110000,
+    "available": true
+  },
+  {
+    "id": "LMP-04",
+    "name": "LAMP LED BULB ARIUS 12W",
+    "brand": "Standard LED",
+    "category": "lampu",
+    "categoryName": "Lampu & Pencahayaan",
+    "spec": "Pcs / Buah",
+    "price": 25000,
+    "available": true
+  },
+  {
+    "id": "LMP-05",
+    "name": "LAMP LED BULB ARIUS 9W",
+    "brand": "Standard LED",
+    "category": "lampu",
+    "categoryName": "Lampu & Pencahayaan",
+    "spec": "Pcs / Buah",
+    "price": 20000,
+    "available": true
+  },
+  {
+    "id": "LMP-06",
+    "name": "LAMP LED CAPSULE ARIUS 15W",
+    "brand": "Standard LED",
+    "category": "lampu",
+    "categoryName": "Lampu & Pencahayaan",
+    "spec": "Pcs / Buah",
+    "price": 30000,
+    "available": true
+  },
+  {
+    "id": "LMP-07",
+    "name": "LAMP TLD RING BULAT 32W",
+    "brand": "Standard LED",
+    "category": "lampu",
+    "categoryName": "Lampu & Pencahayaan",
+    "spec": "Pcs / Buah",
+    "price": 60000,
+    "available": true
+  },
+  {
+    "id": "LMP-08",
+    "name": "MAGIC LAMP LUBY ALADIN 10W",
+    "brand": "Luby",
+    "category": "lampu",
+    "categoryName": "Lampu & Pencahayaan",
+    "spec": "Pcs / Buah",
+    "price": 75000,
+    "available": true
+  },
+  {
+    "id": "LMP-09",
+    "name": "MAGIC LAMP SMD A9W",
+    "brand": "Standard LED",
+    "category": "lampu",
+    "categoryName": "Lampu & Pencahayaan",
+    "spec": "Pcs / Buah",
+    "price": 40000,
+    "available": true
+  },
+  {
+    "id": "LMP-10",
+    "name": "MAGIC LAMP SMD B15W",
+    "brand": "Standard LED",
+    "category": "lampu",
+    "categoryName": "Lampu & Pencahayaan",
+    "spec": "Pcs / Buah",
+    "price": 45000,
+    "available": true
+  },
+  {
+    "id": "PNL-01",
+    "name": "AMPEREMETER/PANEL METER SCHNEIDER DM-1110",
+    "brand": "Schneider",
+    "category": "panel",
+    "categoryName": "Komponen Panel",
+    "spec": "Unit / Modul",
+    "price": 415000,
+    "available": true
+  },
+  {
+    "id": "PNL-02",
+    "name": "BOX MCB 12 GROUP DV IB/OB",
+    "brand": "Industrial",
+    "category": "panel",
+    "categoryName": "Komponen Panel",
+    "spec": "Unit / Modul",
+    "price": 60000,
+    "available": true
+  },
+  {
+    "id": "PNL-03",
+    "name": "COS DV 25A /40A",
+    "brand": "Industrial",
+    "category": "panel",
+    "categoryName": "Komponen Panel",
+    "spec": "Unit / Modul",
+    "price": 100000,
+    "available": true
+  },
+  {
+    "id": "PNL-04",
+    "name": "MCB SCHNEIDER 1P A2A",
+    "brand": "Schneider",
+    "category": "panel",
+    "categoryName": "Komponen Panel",
+    "spec": "Unit / Modul",
+    "price": 115000,
+    "available": true
+  },
+  {
+    "id": "PNL-05",
+    "name": "MCB SCHNEIDER 1P B4A",
+    "brand": "Schneider",
+    "category": "panel",
+    "categoryName": "Komponen Panel",
+    "spec": "Unit / Modul",
+    "price": 115000,
+    "available": true
+  },
+  {
+    "id": "PNL-06",
+    "name": "MCB SCHNEIDER 1P C6A",
+    "brand": "Schneider",
+    "category": "panel",
+    "categoryName": "Komponen Panel",
+    "spec": "Unit / Modul",
+    "price": 90000,
+    "available": true
+  },
+  {
+    "id": "PNL-07",
+    "name": "MCB SCHNEIDER 1P D10A",
+    "brand": "Schneider",
+    "category": "panel",
+    "categoryName": "Komponen Panel",
+    "spec": "Unit / Modul",
+    "price": 90000,
+    "available": true
+  },
+  {
+    "id": "PNL-08",
+    "name": "MCB SCHNEIDER 1P E16A",
+    "brand": "Schneider",
+    "category": "panel",
+    "categoryName": "Komponen Panel",
+    "spec": "Unit / Modul",
+    "price": 90000,
+    "available": true
+  },
+  {
+    "id": "PNL-09",
+    "name": "MCB SCHNEIDER 1P F20A",
+    "brand": "Schneider",
+    "category": "panel",
+    "categoryName": "Komponen Panel",
+    "spec": "Unit / Modul",
+    "price": 90000,
+    "available": true
+  },
+  {
+    "id": "PNL-10",
+    "name": "MCB SCHNEIDER 1P G25A",
+    "brand": "Schneider",
+    "category": "panel",
+    "categoryName": "Komponen Panel",
+    "spec": "Unit / Modul",
+    "price": 100000,
+    "available": true
+  },
+  {
+    "id": "SKL-01",
+    "name": "BROCO FITTING KOMBINASI 226L",
+    "brand": "Broco",
+    "category": "saklar",
+    "categoryName": "Saklar & Instalasi",
+    "spec": "Pcs / Set",
+    "price": 10000,
+    "available": true
+  },
+  {
+    "id": "SKL-02",
+    "name": "BROCO T ARDE PUTIH AR 1383055",
+    "brand": "Broco",
+    "category": "saklar",
+    "categoryName": "Saklar & Instalasi",
+    "spec": "Pcs / Set",
+    "price": 25000,
+    "available": true
+  },
+  {
+    "id": "SKL-03",
+    "name": "FITTING SENSOR SIVITECH",
+    "brand": "Standard",
+    "category": "saklar",
+    "categoryName": "Saklar & Instalasi",
+    "spec": "Pcs / Set",
+    "price": 30000,
+    "available": true
+  },
+  {
+    "id": "SKL-04",
+    "name": "OVERSTEKER +SWTCH LOYAL LY-922SK",
+    "brand": "Standard",
+    "category": "saklar",
+    "categoryName": "Saklar & Instalasi",
+    "spec": "Pcs / Set",
+    "price": 17000,
+    "available": true
+  },
+  {
+    "id": "SKL-05",
+    "name": "OVERSTEKER BIASA LOYAL LY-921K",
+    "brand": "Standard",
+    "category": "saklar",
+    "categoryName": "Saklar & Instalasi",
+    "spec": "Pcs / Set",
+    "price": 10000,
+    "available": true
+  },
+  {
+    "id": "SKL-06",
+    "name": "S/K ARDE LOYAL 1 LUBANG LY-901N",
+    "brand": "Standard",
+    "category": "saklar",
+    "categoryName": "Saklar & Instalasi",
+    "spec": "Pcs / Set",
+    "price": 9000,
+    "available": true
+  },
+  {
+    "id": "SKL-07",
+    "name": "S/K ARDE LOYAL 2 LUBANG LY-902",
+    "brand": "Standard",
+    "category": "saklar",
+    "categoryName": "Saklar & Instalasi",
+    "spec": "Pcs / Set",
+    "price": 13000,
+    "available": true
+  },
+  {
+    "id": "SKL-08",
+    "name": "S/K ARDE LOYAL 3 LUBANG LY-903",
+    "brand": "Standard",
+    "category": "saklar",
+    "categoryName": "Saklar & Instalasi",
+    "spec": "Pcs / Set",
+    "price": 18000,
+    "available": true
+  },
+  {
+    "id": "SKL-09",
+    "name": "S/K ARDE LOYAL 4 LUBANG LY-904",
+    "brand": "Standard",
+    "category": "saklar",
+    "categoryName": "Saklar & Instalasi",
+    "spec": "Pcs / Set",
+    "price": 23000,
+    "available": true
+  },
+  {
+    "id": "SKL-10",
+    "name": "S/K ARDE LOYAL 5 LUBANG LY-905",
+    "brand": "Standard",
+    "category": "saklar",
+    "categoryName": "Saklar & Instalasi",
+    "spec": "Pcs / Set",
+    "price": 28000,
+    "available": true
+  }
+]
