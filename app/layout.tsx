@@ -38,6 +38,12 @@ const jetbrainsMono = JetBrains_Mono({
   weight: ["400", "500"],
 });
 
+const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  (process.env.VERCEL_PROJECT_PRODUCTION_URL
+    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+    : "https://aditya-elektrik-jaya.vercel.app");
+
 export const metadata: Metadata = {
   title: "Aditya Elektrik Jaya | Toko Elektrikal & Lampu Terlengkap Semarang",
   description:
@@ -57,7 +63,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Aditya Elektrik Jaya" }],
   creator: "Aditya Elektrik Jaya",
   publisher: "Aditya Elektrik Jaya",
-  metadataBase: new URL("https://adityaelektrikjaya.com"),
+  metadataBase: new URL(SITE_URL),
   alternates: {
     canonical: "/",
   },
@@ -74,7 +80,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "id_ID",
-    url: "https://adityaelektrikjaya.com",
+    url: SITE_URL,
     siteName: "Aditya Elektrik Jaya",
     title: "Aditya Elektrik Jaya | Solusi Elektrikal Terlengkap Semarang",
     description:
@@ -112,10 +118,10 @@ const jsonLdSchema = {
   "@graph": [
     {
       "@type": ["LocalBusiness", "HardwareStore"],
-      "@id": "https://adityaelektrikjaya.com/#business",
+      "@id": `${SITE_URL}/#business`,
       name: "Aditya Elektrik Jaya",
       alternateName: "AEJ",
-      url: "https://adityaelektrikjaya.com",
+      url: SITE_URL,
       description:
         "Distributor dan toko elektrikal terpercaya di Semarang, Indonesia. Menyediakan kabel, lampu LED, komponen panel listrik, saklar, dan solusi pencahayaan untuk proyek B2B, kontraktor, dan kebutuhan rumah tangga.",
       foundingDate: "2017",
