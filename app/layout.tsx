@@ -45,20 +45,20 @@ const SITE_URL =
     : "https://aditya-elektrik-jaya.vercel.app");
 
 export const metadata: Metadata = {
-  title: "Aditya Elektrik Jaya | Toko Elektrikal & Lampu Terlengkap Semarang",
+  title: "Toko Listrik Semarang Terlengkap — Aditya Elektrik Jaya | Kabel, Lampu & Panel",
   description:
-    "Aditya Elektrik Jaya merupakan distributor dan toko elektrikal terpercaya di Semarang sejak 2017. Menyediakan kabel, lampu, komponen panel, saklar, dan solusi pencahayaan untuk proyek B2B, kontraktor, dan rumah tangga.",
+    "Toko listrik Semarang terlengkap sejak 2017. Aditya Elektrik Jaya distributor resmi kabel Eterna/Supreme, lampu In-Lite/Philips, MCB Schneider, dan saklar Panasonic di Pedurungan, Tlogosari Semarang.",
   keywords: [
-    "toko elektrik semarang",
+    "toko listrik semarang",
+    "toko alat listrik semarang",
     "distributor kabel semarang",
+    "toko listrik tlogosari",
+    "toko listrik pedurungan",
     "lampu led semarang",
-    "komponen panel listrik",
+    "komponen panel listrik semarang",
     "saklar semarang",
     "kontraktor listrik semarang",
     "aditya elektrik jaya",
-    "toko listrik tlogosari",
-    "instalasi listrik",
-    "pencahayaan industrial",
   ],
   authors: [{ name: "Aditya Elektrik Jaya" }],
   creator: "Aditya Elektrik Jaya",
@@ -117,18 +117,29 @@ const jsonLdSchema = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": ["LocalBusiness", "HardwareStore"],
+      "@type": ["ElectricalSupplyStore", "HardwareStore", "LocalBusiness"],
       "@id": `${SITE_URL}/#business`,
       name: "Aditya Elektrik Jaya",
-      alternateName: "AEJ",
+      alternateName: ["AEJ", "Toko Listrik Aditya Elektrik Jaya"],
       url: SITE_URL,
       description:
-        "Distributor dan toko elektrikal terpercaya di Semarang, Indonesia. Menyediakan kabel, lampu LED, komponen panel listrik, saklar, dan solusi pencahayaan untuk proyek B2B, kontraktor, dan kebutuhan rumah tangga.",
+        "Toko listrik Semarang dan distributor material elektrikal terpercaya sejak 2017. Menyediakan kabel SNI, lampu LED, komponen panel listrik, saklar, dan kebutuhan instalasi listrik proyek & rumah tangga di Tlogosari, Pedurungan, Kota Semarang.",
+      priceRange: "$$",
+      currenciesAccepted: "IDR",
+      paymentAccepted: "Cash, Bank Transfer, QRIS",
+      areaServed: {
+        "@type": "City",
+        name: "Semarang",
+        containedInPlace: {
+          "@type": "AdministrativeArea",
+          name: "Jawa Tengah",
+        },
+      },
       foundingDate: "2017",
       telephone: "+6281391585582",
       address: {
         "@type": "PostalAddress",
-        streetAddress: "Jl. Parang Kusumo I No.19",
+        streetAddress: "Jl. Parang Kusumo I No.19, Tlogosari Kulon",
         addressLocality: "Semarang",
         addressRegion: "Jawa Tengah",
         postalCode: "50196",

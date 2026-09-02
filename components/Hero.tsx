@@ -141,10 +141,15 @@ export default function Hero() {
           </span>
         </motion.div>
 
-        {/* ── Main Headline — Commercial, Direct ── */}
+        {/* ── Semantic SEO H1 — Exact Match for Google Search ── */}
+        <h1 className="sr-only">
+          Toko Listrik Semarang — Aditya Elektrik Jaya | Distributor Kabel, Lampu LED &amp; Komponen Panel Terlengkap
+        </h1>
+
+        {/* ── Main Headline — Visual Display ── */}
         <div className="flex-1 flex flex-col justify-center max-w-[900px]">
-          <div className="overflow-hidden mb-2">
-            <motion.h1
+          <div aria-hidden="true" className="overflow-hidden mb-2">
+            <motion.div
               initial={{ y: prefersReduced ? 0 : 24, opacity: 1 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.6, ease: [0.76, 0, 0.24, 1] }}
@@ -152,7 +157,7 @@ export default function Hero() {
               style={{ fontSize: "clamp(2.4rem, 7.5vw, 6.5rem)" }}
             >
               Material Listrik
-            </motion.h1>
+            </motion.div>
           </div>
           <div className="overflow-hidden mb-4">
             <motion.div
